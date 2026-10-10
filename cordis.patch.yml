@@ -1,0 +1,6 @@
+# 把 dsh-api-heal 挂进当前 profile。
+# 它注册 heal_api 工具、监听 agent/request-error 做凭据自愈,
+# 并开一条 /plugins/dsh-api-heal/status 状态路由。
+- insert:
+    - id: api-heal
+      name: dsh-api-heal

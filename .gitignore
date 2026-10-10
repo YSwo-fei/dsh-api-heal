@@ -1,0 +1,34 @@
+# 凭据与运行时状态 —— 绝不入库
+.credentials.yaml
+*.credentials.yaml
+.qoder-auth.json
+.qoder-account.json
+auth.v1.dat
+.workbuddy-auth.json
+.workbuddy-ai-auth.json
+*.info
+.cache/
+
+# 测试用的依赖暂存(从 app.asar 抽取,体积大且可重建)
+_realmods/
+testmods/
+.plug/
+
+# 日志与临时文件
+*.log
+*.tmp
+*.bak
+*.orig
+*.bak-*
+
+# 依赖
+node_modules/
+pnpm-lock.yaml
+package-lock.json
+
+# 编辑器 / 系统
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
